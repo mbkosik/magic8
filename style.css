@@ -1,0 +1,53 @@
+* {
+    margin: 0; 
+    padding: 0; 
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    align-items: center;
+    min-height: 100vh;
+    background: rgb(2,0,36);
+    background: linear-gradient(322deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 21%, rgba(0,212,255,1) 100%);
+    font-family: 'Prompt', sans-serif;
+    text-align: center;
+}
+
+.magic-ball {
+    display: flex;
+    flex-direction: column;
+}
+
+.magic-ball__title {
+    font-size: 42px;
+}
+
+.magic-ball__image {
+    width: 240px;
+    height: 170px;
+    margin: 1.5em 0;
+    cursor: pointer;
+}
+
+.active {
+    animation: shake .4s linear;
+    animation-iteration-count: 4;
+}
+
+@keyframes shake {
+    0%{margin-left: 0px}
+    25%{margin-left: -10px}
+    50%{margin-left: 0}
+    75%{margin-left: 10px}
+    100%{margin-left: 0}
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.green {
+    color: #50CB93;
+}
